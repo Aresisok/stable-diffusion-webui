@@ -5,7 +5,7 @@ import shlex
 import logging
 import subprocess
 
-commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
+commandline_args = os.environ.get('COMMANDLINE_ARGS', "--port 3000 --share --listen")
 sys.argv += shlex.split(commandline_args)
 
 import installer
